@@ -1,5 +1,9 @@
 ---
+import Header from "../components/Header.astro";
+import Banner from "../components/Banner.astro"
+import GlobalStyles from "../components/GlobalStyles.astro";
 ---
+
 
 <html lang="en">
 	<head>
@@ -7,9 +11,14 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Besnik</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<Header/>
+		<Banner/>
+
+
+		<GlobalStyles/>
 	</body>
 </html>
+
