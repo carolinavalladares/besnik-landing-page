@@ -1,0 +1,134 @@
+<section>
+  <div class="infocard">
+    <div class="infocard-text">
+      <h2 class="title">Featured Properties</h2>
+      <p class="description">Everything you need to know when you're looking</p>
+      <a class="link" title="get started now" href="/">Get Started Now</a>
+    </div>
+
+    <div class="phone_outer">
+      <div class="phone_inner">
+        <img src="/images/phone_screen.png" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    padding: 60px 16px 50px;
+  }
+  .infocard {
+    position: relative;
+    max-width: 1110px;
+    margin: 40px auto 0;
+    height: 370px;
+    border-radius: 20px;
+    background: #063183;
+    padding-left: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .title {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    opacity: 0.75;
+    margin-bottom: 20px;
+  }
+  .link {
+    border-radius: 12px;
+    background: #fff;
+
+    color: #002366;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: normal;
+    height: 50px;
+    width: 151px;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .phone_outer {
+    position: absolute;
+    right: 15%;
+    bottom: 0;
+
+    padding: 10px 10px 0;
+    background-color: #f4f4f4;
+    height: 410px;
+    border-radius: 40px 40px 0 0;
+  }
+
+  .phone_outer::before {
+    content: "";
+    height: 50px;
+    width: 3px;
+    position: absolute;
+    right: -3px;
+    top: 80px;
+    background-color: #f4f4f4;
+  }
+
+  .phone_inner {
+    position: relative;
+    background-color: #ffffff;
+    height: 100%;
+    width: 218px;
+    border-radius: 30px 30px 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .phone_inner::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 100px;
+    background-color: #f4f4f4;
+    top: 0;
+    right: 50%;
+    translate: 50% 0;
+    border-radius: 0 0 12px 12px;
+  }
+
+  .phone_inner img {
+    width: 145px;
+  }
+
+  @media screen and (max-width: 940px) {
+    section {
+      padding: 10px 16px;
+    }
+    .infocard {
+      height: unset;
+      padding: 50px 24px 450px;
+      margin: 0 auto;
+    }
+
+    .phone_outer {
+      right: 50%;
+      translate: 50% 0;
+      bottom: 0;
+    }
+  }
+</style>
