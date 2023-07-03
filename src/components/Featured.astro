@@ -1,0 +1,213 @@
+<section>
+  <div class="wrapper">
+    <div class="top-container">
+      <div>
+        <h2 class="title">Featured Properties</h2>
+        <p class="description">
+          Everything you need to know when you're looking
+        </p>
+      </div>
+
+      <a class="view-all-link" title="view all properties" href="/"
+        >View All Properties <img src="./icons/arrow.svg" alt="arrow icon" /></a
+      >
+    </div>
+
+    <div class="card-container">
+      <div class="property">
+        <div class="image-container">
+          <img class="property-image" src="" alt="" />
+        </div>
+
+        <div class="property-info">
+          <p class="property-price">$35000</p>
+          <p class="property-address">
+            8502 Preston Rd. Inglewood, Maine 98280
+          </p>
+          <div class="property-size-info">
+            <div>
+              <img src="/icons/beds_icon.svg" alt="bed icon" />
+              <span>5 beds</span>
+            </div>
+            <div>
+              <img src="/icons/bath_icon.svg" alt="bath icon" />
+              <span>2 both</span>
+            </div>
+            <div>
+              <img src="/icons/square_icon.svg" alt="bed icon" />
+              <span>2000 Sqft</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="property">
+        <div class="image-container">
+          <img class="property-image" src="" alt="" />
+        </div>
+
+        <div class="property-info">
+          <p class="property-price">$35000</p>
+          <p class="property-address">
+            8502 Preston Rd. Inglewood, Maine 98280
+          </p>
+          <div class="property-size-info">
+            <div>
+              <img src="/icons/beds_icon.svg" alt="bed icon" />
+              <span>5 beds</span>
+            </div>
+            <div>
+              <img src="/icons/bath_icon.svg" alt="bath icon" />
+              <span>2 both</span>
+            </div>
+            <div>
+              <img src="/icons/square_icon.svg" alt="bed icon" />
+              <span>2000 Sqft</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="property">
+        <div class="image-container">
+          <img class="property-image" src="" alt="" />
+        </div>
+
+        <div>
+          <p class="property-price">$35000</p>
+          <p class="property-address">
+            8502 Preston Rd. Inglewood, Maine 98280
+          </p>
+          <div class="property-size-info">
+            <div>
+              <img src="/icons/beds_icon.svg" alt="bed icon" />
+              <span>5 beds</span>
+            </div>
+            <div>
+              <img src="/icons/bath_icon.svg" alt="bath icon" />
+              <span>2 both</span>
+            </div>
+            <div>
+              <img src="/icons/square_icon.svg" alt="bed icon" />
+              <span>2000 Sqft</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    background-color: #f5fafe;
+    padding: 110px 16px;
+  }
+  .wrapper {
+    width: 100%;
+
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+  .top-container {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+  .title {
+    color: #000339;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    color: #5a6473;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .view-all-link {
+    color: #0689ff;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .property {
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 65px 80px -46px rgba(226, 238, 249, 0.6);
+    padding: 20px;
+    height: 357px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 350px;
+  }
+
+  .image-container {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 8px;
+  }
+  .property-image {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .property-price {
+    color: #000339;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+  .property-address {
+    color: #a3a6ab;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 21px;
+  }
+
+  .property-size-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+  }
+
+  .property-size-info > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #4d4d52;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.14px;
+  }
+</style>
