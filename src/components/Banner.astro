@@ -86,6 +86,67 @@
     font-weight: 500;
   }
 
+  @media screen and (max-width: 768px) {
+    .house-image {
+      width: 50%;
+    }
+
+    .text-wrapper {
+      min-width: unset;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 58px;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      max-width: 450px;
+    }
+
+    h1 {
+      font-size: 36px;
+      line-height: 1.2;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .wrapper {
+      position: relative;
+      padding: 16px 0;
+    }
+    .img-wrapper {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      overflow: hidden;
+      z-index: 0;
+      opacity: 0.2;
+    }
+
+    .house-image {
+      width: 40%;
+    }
+
+    .text-wrapper {
+      z-index: 100;
+    }
+
+    p {
+      margin: 0 auto 24px;
+    }
+
+    h1 {
+      margin-bottom: 24px;
+      max-width: 600px;
+    }
+  }
+
   @media screen and (min-width: 1350px) {
     .house-image {
       width: 584px;
@@ -95,9 +156,14 @@
   @media screen and (max-width: 1350px) {
     .text-wrapper {
       padding-bottom: 24px;
+      text-align: center;
     }
     .wrapper {
       align-items: flex-end;
+    }
+
+    .about-btn {
+      margin: 0 auto;
     }
   }
 </style>

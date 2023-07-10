@@ -1,11 +1,11 @@
 <section>
   <div class="wrapper">
     <div class="top-wrapper">
-      <div>
+      <div class="text-wrapper">
         <img class="logo" src="./images/besnik_logo.png" alt="besnik logo" />
         <p class="phrase">More than 45,000+ companies trust besnik</p>
       </div>
-      <div>
+      <div class="stars-wrapper">
         <div class="stars-container">
           <img src="/icons/star.svg" alt="star icon" />
           <img src="/icons/star.svg" alt="star icon" />
@@ -65,5 +65,22 @@
     flex-wrap: wrap;
     gap: 82px;
     margin-top: 70px;
+  }
+
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 80px 16px 40px;
+    }
+    .top-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .text-wrapper {
+      margin-bottom: 16px;
+    }
+    .stars-wrapper {
+      align-self: flex-end;
+    }
   }
 </style>

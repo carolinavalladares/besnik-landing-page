@@ -1,7 +1,7 @@
 <section>
   <div class="wrapper">
     <div class="top-container">
-      <div>
+      <div class="text-container">
         <h2 class="title">Featured Properties</h2>
         <p class="description">
           Everything you need to know when you're looking
@@ -215,6 +215,24 @@
   @media screen and (max-width: 500px) {
     .property {
       min-width: unset;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 45px 16px;
+    }
+    .top-container {
+      flex-direction: column;
+      margin-bottom: 24px;
+    }
+    .text-container {
+      align-self: flex-start;
+      margin-bottom: 24px;
+    }
+
+    .view-all-link {
+      font-size: 14px;
     }
   }
 </style>

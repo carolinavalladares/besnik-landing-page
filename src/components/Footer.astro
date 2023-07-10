@@ -53,7 +53,7 @@
         </ul>
       </div>
       <div class="footer-section social-section">
-        <h3 class="footer-section-title">Get in touch</h3>
+        <h3 class="footer-section-title social-title">Get in touch</h3>
         <p>You'll find your next home in any style you prefer.</p>
         <ul class="footer-social">
           <li>
@@ -175,5 +175,50 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+
+  @media screen and (max-width: 768px) {
+    .top-container {
+      flex-direction: column;
+    }
+    .footer-section {
+      width: 100%;
+    }
+    .footer-section-title {
+      padding: 12px 0;
+      cursor: pointer;
+      margin-bottom: 0;
+      border-bottom: 1px solid #e1e1e1;
+    }
+    .social-title {
+      border: 0;
+      cursor: auto;
+    }
+
+    .footer-list {
+      overflow: hidden;
+      padding: 12px 0 12px 10px;
+    }
+
+    .footer-list li {
+      margin-bottom: 8px;
+    }
+
+    .footer-list a {
+      font-size: 14px;
+    }
+
+    .social-section > p {
+      font-size: 14px;
+    }
+
+    .bottom-container {
+      flex-direction: column;
+    }
+
+    .copyright {
+      margin-top: 12px;
+      font-size: 12px;
+    }
   }
 </style>
